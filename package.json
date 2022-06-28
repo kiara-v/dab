@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/node": "^17.0.31"
+  },
+  "dependencies": {
+    "firebase": "^9.8.1",
+    "uuid": "^8.3.2",
+    "axios": "0.19.2",
+    "express": "4.17.1"
+  },
+    "name": "server",
+    "version": "1.0.0",
+    "main": "frontend/dab-app/src/index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "node server.js",
+      "heroku-postbuild": "cd client && npm install && npm run build"
+    }
+}
