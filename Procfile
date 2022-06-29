@@ -1,1 +1,1 @@
-web: gunicorn --preload site:app
+web: bin/boot
