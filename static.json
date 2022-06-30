@@ -1,6 +1,6 @@
 {
 	"root": "build/",
 	"routes": {
-	  "/**": "frontend/dab-app/src/index.js"
+	  "/**": "client/dab-app/src/App.js"
 	}
   }

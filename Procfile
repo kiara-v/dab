@@ -1,1 +1,1 @@
-web: bin/boot
+web: java -jar target/chat-1.0-dormsatbrown-jar-with-dependencies.jar

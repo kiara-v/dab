@@ -2,10 +2,15 @@
   "name": "dab",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "client/dab-app/src/App.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node client/dab-app/src/App.js",
+    "server": "nodemon client/dab-app/src/App.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prod": "concurrently \"npm run server\" \"npm run client-prod\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -13,8 +18,5 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kiara-v/dab/issues"
-  },
-  "homepage": "https://github.com/kiara-v/dab#readme"
+  "homepage": "https://kiara-v.github.io"
 }
